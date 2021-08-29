@@ -1,0 +1,209 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Noto Sans JP', sans-serif;
+     
+}
+
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(165, 202, 147) 0%,#387a48 100% );
+    border-bottom:1px solid black;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+    padding: 0.3125rem;
+}
+
+h1 {
+    font-size: 32px;
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+ }
+
+a {
+    text-decoration: none;
+}
+
+header ul li a {
+    transition: 400ms;
+}
+
+header ul li a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-top: 0.625rem;
+    border-bottom: 1px solid;
+    
+}
+    
+div {
+    padding: 3px;
+}
+    
+label {
+    font-size: 13px;
+    font-size: 0.8125rem;    
+}
+
+#container {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.bloco {
+width: 45%;
+display: flex;
+justify-content: space-between;
+}
+
+.preenchimentoObrigatorio{
+    color: red;
+}
+
+#cpf {
+-moz-text-decoration-style: none;
+}
+
+#DataNascimento select{
+    padding: 0px 5px;
+}
+#cep, #telefone, #celular,
+#identidade, #cpf{
+    width: 7.5rem;    
+}
+
+#nome, #endereco, #email {
+width: 18.75rem;
+}
+
+#categoriasHabilitacao, #possuiveiculo {
+    width: 5.625rem;
+}
+
+#numResidencia {
+    width: 3rem;
+}
+
+#container button {
+    width: 10rem;
+    padding: 5px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #188338 50%, rgb(95, 143, 96) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color:#FFF;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: -5px;
+    margin-top: 15px;
+}
+
+#container button:hover{
+    background-position: left bottom;
+}
+
+footer{
+    
+    border-top: 1px solid;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #75b67b;
+}
+
+footer p {
+    color: rgb(29, 19, 19);
+    font-size: smaller;
+}
+
+footer p a {
+    transition: 400ms;
+    color: #FFF;
+}
+
+footer p a:hover{
+    color:#045a0b;
+    text-decoration: underline;
+}
+
+
+span {
+    font-size: 0.75rem;
+    color: red;
+}
+
+@media only screen and (max-width: 820px) {
+    header {
+        flex-direction: column; 
+    }
+
+   .bloco {
+        width: 70%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    #container {
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+    .bloco {
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
